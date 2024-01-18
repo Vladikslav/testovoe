@@ -67,8 +67,8 @@ body {
 
 .page__tuman {
     position: absolute;
-    z-index: 1;
     opacity: 0;
+    z-index: 1;
 }
 
 .page__bg--active {
@@ -210,7 +210,11 @@ body {
 .point_wrapper {
     position: relative;
 }
-
+.a {
+    mix-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.95);
+    background-image: url(image/fon.jpg);
+}
 .point__title {
     color: #FFF;
     text-align: center;
@@ -225,9 +229,10 @@ body {
     margin-left: -25px;
     opacity: 0;
     transition: opacity 1.5s 1.5s;
-    mix-blend-mode: multiply;
     position: relative;
-    z-index: 1;
+    overflow: hidden;
+    /* mix-blend-mode: multiply;
+    background-color: #000; */
 }
 
 .point__title--active {
@@ -247,9 +252,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 0;
     top: 0;
-
 }
 
 .line {
@@ -263,7 +266,8 @@ body {
     height: 80%;
 }
 
-.page__tuman {
+
+.page__tuman--active {
     animation: anim ease-out 6s infinite;
 }
 
@@ -273,15 +277,158 @@ body {
         left: 0%;
     }
 
+    10% {
+        opacity: 0.25;
 
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
 
     50% {
         opacity: 0.5;
     }
 
+    60% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.25;
+    }
 
     100% {
         opacity: 0;
         left: -100%;
     }
+}
+
+
+.reservation {
+    background-color: var(--f-2-e-1-c-2, #F2E1C2);
+    padding: 100px 122px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: -1000px;
+    transition: top 1.5s;
+}
+
+.reservation--active {
+    top: 0;
+}
+
+.reservation__headline {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.reservation__title {
+    color: var(--262526, #262526);
+    font-family: 'Bebas-Neue';
+    font-size: 114px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.85px;
+    text-transform: uppercase;
+    margin: 0px 0px 80px;
+    max-width: 600px;
+    word-break: break-word;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid #262526;
+}
+
+.form-fieldset__column-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-field__label {
+    color: var(--262526, #262526);
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-field__control {
+    color: var(--262526, #262526);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.select {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    width: 60%;
+    opacity: 0;
+}
+
+.form-field__control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.form-field__control::-ms-expand {
+    display: none;
+}
+
+.reservation__close {
+    display: block;
+    padding: 10px;
+    background-color: #262526;
+    cursor: pointer;
+}
+
+.reservation-form__button {
+    display: block;
+    border-radius: 4px;
+    background: var(--262526, #262526);
+    padding: 10px 15px;
+    margin-top: 60px;
+    margin-left: auto;
+    width: 387px;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    box-sizing: border-box;
 }

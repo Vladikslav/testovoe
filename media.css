@@ -1,16 +1,90 @@
+@media screen and (max-width: 1250px) {
+    .point__title {
+        font-size: 528px;
+        letter-spacing: 10px;
+        margin-left: 0;
+    }
+
+    input::-webkit-calendar-picker-indicator {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .main-navigation {
         flex-wrap: wrap;
     }
+
+    .point__title {
+        font-size: 390px;
+    }
+
+    .reservation {
+        padding: 50px;
+    }
+
+    .reservation__title {
+        font-size: 94px;
+    }
 }
+
 @media screen and (max-width: 768px) {
     .main-navigation {
         justify-content: center;
     }
+
     .main-navigation__site-navigation {
         order: 2;
         margin: auto;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .point__title {
+        font-size: 309px;
+    }
+    .form-fieldset__column-layout {
+        flex-wrap: wrap;
+    }
+    .reservation {
+        padding: 30px;
+    }
+    input::-webkit-calendar-picker-indicator {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .page__header {
+        margin-bottom: 10px;
+    }
+
+    .point__title {
+        font-size: 250px;
+    }
+
+    .point__description {
+        font-size: 26px;
+    }
+    .reservation {
+        padding: 20px;
+    }
+    .reservation__title {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    .reservation-form__button {
+        margin: 60px auto 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .point__title {
+        font-size: 163px;
+    }
+
+    .point__description {
+        font-size: 21px;
     }
 }

@@ -50,6 +50,38 @@
                 </div>
             </section>
         </main>
+        <article class="reservation">
+            <div class="reservation__headline">
+                <h2 class="reservation__title">Бронирование билетов</h2>
+                <span class="close reservation__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M0 1.71429L1.71429 4.08718e-07L12 10.2857L10.2857 12L0 1.71429Z" fill="#D9D9D9" />
+                        <path d="M1.71429 12L0 10.2857L10.2857 0L12 1.71429L1.71429 12Z" fill="#D9D9D9" />
+                    </svg>
+                </span>
+            </div>
+            <form action="" class="reservation__form reservation-form">
+                <div class="form-fieldset__column-layout">
+                    <label for="" class="form-field">
+                        <span class="form-field__label">Дата заезда</span>
+                        <input class="form-field__control input" type="date">
+                    </label>
+                    <label for="" class="form-field">
+                        <span class="form-field__label">Дата выезда</span>
+                        <input class="form-field__control input" type="date">
+                    </label>
+                    <label for="" class="form-field">
+                        <span class="form-field__label">Количество</span>
+                        <select class="form-field__control select" name="deposit-period" id="deposit-period">
+                            <option>1 человек</option>
+                            <option>2 человека</option>
+                            <option>3 человека</option>
+                        </select>
+                    </label>
+                </div>
+                <button class="reservation-form__button button">Купить билеты</button>
+            </form>
+        </article>
     </div>
     <script src="script.js"></script>
 </body>
